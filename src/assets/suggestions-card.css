@@ -1,0 +1,17 @@
+.suggestion-card {
+  text-align: left;
+  padding: 15px;
+}
+
+.suggestion-card-box {
+  padding-top: 15px;
+}
+
+.suggestion-card-rounded-img {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  float: left;
+}

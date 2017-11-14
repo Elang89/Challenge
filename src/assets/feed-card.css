@@ -1,0 +1,25 @@
+.feed-card {
+  padding: 15px;
+}
+
+.feed-card-top {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #e8f5fd;
+}
+
+.feed-card-rounded-img {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+  margin-bottom: 2px;
+  float: left;
+}
+
+.feed-card-input {
+  width: 87% !important;
+  margin-top: 5px !important;
+}
