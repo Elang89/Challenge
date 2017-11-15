@@ -10,7 +10,7 @@ import {
 } from 'reactstrap';
 
 import '../../assets/user-card.css';
-import PictureIcon from '../../assets/images/camera.svg'
+import PictureIcon from '../../assets/images/camera.svg';
 
 const UserCard = () => {
   return (
@@ -22,9 +22,11 @@ const UserCard = () => {
           alt="Card image cap"
         />
         <span className="user-card-details-box">
-          <div className='user-card-image-button'><img src={PictureIcon}/></div>
+          <div className="user-card-image-button">
+            <img src={PictureIcon} />
+          </div>
           <CardTitle>Name</CardTitle>
-          <CardSubtitle className="">User Name</CardSubtitle>
+          <CardSubtitle>User Name</CardSubtitle>
         </span>
       </Card>
     </div>

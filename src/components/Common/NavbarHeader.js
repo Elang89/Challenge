@@ -9,6 +9,8 @@ import {
   NavLink
 } from 'reactstrap';
 
+import '../../assets/navbar-header.css';
+
 class NavbarHeader extends Component {
   state = {
     isOpen: false
@@ -23,18 +25,18 @@ class NavbarHeader extends Component {
   render = () => {
     return (
       <div>
-        <Navbar color="dark" dark expand="md">
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
+        <Navbar className="navbar-header" dark expand="md">
+          <NavbarBrand className="navbar-header-brand" href="/">
+            Tooter
+          </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">Components</NavLink>
+                <NavLink href="/">About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">
-                  Github
-                </NavLink>
+                <NavLink href="/">Contact Us</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

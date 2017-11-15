@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { DEFAULT_URL } from '../../../constants/urls';
 import {
   GET_MY_POSTS_REQUEST,
   GET_MY_POSTS_SUCCESS,
@@ -11,8 +12,6 @@ import {
   DELETE_POST_REQUEST
 } from './postsActions';
 
-const defaultURL = 'http://localhost:3001';
-
 export const getFollowedPostsSuccess = response => {
   return { type: GET_FOLLOWED_POSTS_SUCCESS, payload: response };
 };
@@ -22,21 +21,23 @@ export const getFollowedPostsFailure = error => {
 };
 
 export const getFollowedPosts = ids => {
-  const URL = defaultURL + '/posts?userId=';
+  const URL = DEFAULT_URL + '/posts?userId=';
   let URLList = ids.map(item => `${URL}${item.id}`);
 
   return dispatch => {
     type: GET_FOLLOWED_POSTS_REQUEST,
       axios.all(URLList.map(request => axios.get(request))).then(
         axios.spread((...response) => {
-          let data = [].concat(response.map(item => item.data.map(result => result)));
+          let data = [].concat(
+            response.map(item => item.data.map(result => result))
+          );
           let emptyList = [];
-          for(let i = 0; i < data.length; i++){
-            for(let j = 0; j < data[i].length; j++){
+          for (let i = 0; i < data.length; i++) {
+            for (let j = 0; j < data[i].length; j++) {
               emptyList = emptyList.concat(data[i][j]);
-            } 
+            }
           }
-          dispatch(getFollowedPostsSuccess(emptyList)); 
+          dispatch(getFollowedPostsSuccess(emptyList));
         })
       );
   };
@@ -51,7 +52,7 @@ export const getMyPostsFailure = error => {
 };
 
 export const getMyPosts = id => {
-  const URL = defaultURL + `/posts?userId=${id}`;
+  const URL = DEFAULT_URL + `/posts?userId=${id}`;
 
   return dispatch => {
     type: GET_MY_POSTS_REQUEST,

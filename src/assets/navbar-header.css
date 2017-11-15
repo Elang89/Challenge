@@ -1,0 +1,12 @@
+.navbar-header {
+  background-color: #66da37;
+}
+
+.navbar-header-brand {
+  margin-left: 20%;
+}
+
+.navbar-header-brand-image {
+  width: 10px;
+  height: 10px;
+}

@@ -1,0 +1,120 @@
+{
+  "users": [
+    {
+      "id": "2c31e87a-c9ee-480d-995c-a63a7f42bbae",
+      "userName": "@realdonaldtrump",
+      "password": "xyz",
+      "email": "donaldTrump@gmail.com",
+      "firstName": "Donald",
+      "lastName": "Trump",
+      "following": [
+        { "id": "4fab1b02-183f-4c68-ae8c-e9f3a10a01b7" },
+        { "id": "5229309d-350f-4c85-a47f-659aa7e3613e" },
+        { "id": "32354096-0433-4505-93ea-9fdddd99ecba" }
+      ],
+      "posts": 162
+    },
+    {
+      "id": "5229309d-350f-4c85-a47f-659aa7e3613e",
+      "userName": "@wilson",
+      "password": "ops",
+      "email": "jackwilson@gmail.com",
+      "firstName": "Jack",
+      "lastName": "Wilson",
+      "following": [],
+      "posts": 213
+    },
+    {
+      "id": "32354096-0433-4505-93ea-9fdddd99ecba",
+      "userName": "@someplace",
+      "password": "ijx",
+      "email": "thatguy@gmail.com",
+      "firstName": "That",
+      "lastName": "Guy",
+      "following": [{ "id": "5229309d-350f-4c85-a47f-659aa7e3613e" }],
+      "posts": 500
+    },
+    {
+      "id": "4fab1b02-183f-4c68-ae8c-e9f3a10a01b7",
+      "userName": "@TheDude",
+      "password": "ijx",
+      "email": "thedude@gmail.com",
+      "firstName": "Jeffrey",
+      "lastName": "Lebowski",
+      "following": [{ "id": "5229309d-350f-4c85-a47f-659aa7e3613e" }],
+      "posts": 500
+    }
+  ],
+  "posts": [
+    {
+      "id": "f903b5fc-1e78-40bb-acb4-74042f53caa3",
+      "userId": "2c31e87a-c9ee-480d-995c-a63a7f42bbae",
+      "content": "This is a post",
+      "img":
+        "https://www.myhappyenglish.com/x9walos9f/uploads/2013/05/placeholder1.png",
+      "dateAdded": "07-20-2017 10:25",
+      "dateModified": "none",
+      "likes": 401
+    },
+    {
+      "id": "38bb5b44-0c71-42e7-98b7-8343efc9501e",
+      "userId": "2c31e87a-c9ee-480d-995c-a63a7f42bbae",
+      "content": "This is another post",
+      "img":
+        "https://www.myhappyenglish.com/x9walos9f/uploads/2013/05/placeholder1.png",
+      "dateAdded": "07-30-2017 9:30",
+      "dateModified": "none",
+      "likes": 80
+    },
+    {
+      "id": "a7608b40-a2af-45f0-93f2-16165dfe0ae4",
+      "userId": "2c31e87a-c9ee-480d-995c-a63a7f42bbae",
+      "content": "This is one more post",
+      "img":
+        "https://www.myhappyenglish.com/x9walos9f/uploads/2013/05/placeholder1.png",
+      "dateAdded": "09-30-2017 13:30",
+      "dateModified": "none",
+      "likes": 25
+    },
+    {
+      "id": "c9c5f495-daa5-444b-a57e-09563ae1f47e",
+      "userId": "2c31e87a-c9ee-480d-995c-a63a7f42bbae",
+      "content": "This is some other post post",
+      "img":
+        "https://www.myhappyenglish.com/x9walos9f/uploads/2013/05/placeholder1.png",
+      "dateAdded": "08-30-2017 16:17",
+      "dateModified": "none",
+      "likes": 30
+    },
+    {
+      "id": "a10f16f5-3688-4acb-a86f-c9981ff68c2a",
+      "userId": "4fab1b02-183f-4c68-ae8c-e9f3a10a01b7",
+      "content": "My Post",
+      "img":
+        "https://www.myhappyenglish.com/x9walos9f/uploads/2013/05/placeholder1.png",
+      "dateAdded": "08-30-2017 16:17",
+      "dateModified": "none",
+      "likes": 30
+    },
+    {
+      "id": "c6d1bf3a-c988-11e7-abc4-cec278b6b50a",
+      "userId": "32354096-0433-4505-93ea-9fdddd99ecba",
+      "content": "Some post",
+      "img":
+        "https://www.myhappyenglish.com/x9walos9f/uploads/2013/05/placeholder1.png",
+      "dateAdded": "08-30-2017 16:17",
+      "dateModified": "none",
+      "likes": 30
+    },
+    {
+      "id": "5e6f24a0-c2f1-43e6-b823-815df7da84fd",
+      "userId": "5229309d-350f-4c85-a47f-659aa7e3613e",
+      "content": "And yet another post",
+      "img":
+        "https://www.myhappyenglish.com/x9walos9f/uploads/2013/05/placeholder1.png",
+      "dateAdded": "08-30-2017 16:17",
+      "dateModified": "none",
+      "likes": 30
+    }
+  ]
+}

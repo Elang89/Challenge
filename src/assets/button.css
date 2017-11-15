@@ -1,5 +1,14 @@
-.btn .button-follow {
+.button-follow {
   border-radius: 10px;
   padding-bottom: 10px;
   font-size: 14px;
+}
+
+.button-login-form {
+  margin-right: 10px;
+}
+
+.button-login-form-container {
+  padding-top: 15px;
+  float: right;
 }
