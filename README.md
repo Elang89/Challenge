@@ -1,4 +1,4 @@
-#Tooter (Twitter Clone)
+# Tooter (Twitter Clone)
 
 ##How to use 
 1. Run Json Server with "json-server --watch twitter.json"
