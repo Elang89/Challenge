@@ -23,3 +23,17 @@
   width: 87% !important;
   margin-top: 5px !important;
 }
+
+.feed-card-post-name {
+  padding-right: 10px;
+}
+
+.feed-card-post-content {
+  margin-left: 58px;
+}
+
+.feed-card-content-image {
+  width: 88%;
+  height: 100%;
+  margin-left: 13%;
+}

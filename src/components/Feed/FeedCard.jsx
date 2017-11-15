@@ -1,10 +1,13 @@
-import React from 'react';
-import { string, number, shape, arrayOf } from 'prop-types';
-import { Card, Button, CardTitle, CardText, Input } from 'reactstrap';
+import React from "react";
+import { string, number, shape, arrayOf } from "prop-types";
+import { Card, Button, CardTitle, CardText, Input } from "reactstrap";
+import FeedContentCard from "./FeedContentCard";
 
-import '../../assets/feed-card.css';
+import "../../assets/feed-card.css";
 
 const FeedCard = ({ posts }) => {
+  console.log(posts);
+
   return (
     <div>
       <Card className="feed-card-top">
@@ -20,10 +23,17 @@ const FeedCard = ({ posts }) => {
           />
         </span>
       </Card>
-      <Card body>
-        <CardTitle>Post Title</CardTitle>
-        <CardText>This is text</CardText>
-      </Card>
+      {posts
+        ? posts.map(post => (
+            <FeedContentCard
+              firstName="Name"
+              lastName="Last Name"
+              userName="username"
+              postContent={post.content}
+              image={post.img}
+            />
+          ))
+        : null}
     </div>
   );
 };

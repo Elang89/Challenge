@@ -5,3 +5,11 @@
 .user-card-subtitle {
   color: #cad0d5;
 }
+
+
+.user-card-image-button {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  width: 72px;
+  height: 72px;
+}

@@ -1,0 +1,16 @@
+.info-card {
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.info-card-list {
+  padding: 0;
+  position: relative;
+  list-style-type: none;
+  font-size: 12px;
+}
+
+.info-card-list-element {
+  display: inline-block;
+  padding-right: 5px;
+}

@@ -11,7 +11,7 @@ import {
   DELETE_POST_REQUEST
 } from './postsActions';
 
-const defaultURL = 'http://localhost:3000';
+const defaultURL = 'http://localhost:3001';
 
 export const getFollowedPostsSuccess = response => {
   return { type: GET_FOLLOWED_POSTS_SUCCESS, payload: response };
@@ -29,7 +29,14 @@ export const getFollowedPosts = ids => {
     type: GET_FOLLOWED_POSTS_REQUEST,
       axios.all(URLList.map(request => axios.get(request))).then(
         axios.spread((...response) => {
-          console.log(response);
+          let data = [].concat(response.map(item => item.data.map(result => result)));
+          let emptyList = [];
+          for(let i = 0; i < data.length; i++){
+            for(let j = 0; j < data[i].length; j++){
+              emptyList = emptyList.concat(data[i][j]);
+            } 
+          }
+          dispatch(getFollowedPostsSuccess(emptyList)); 
         })
       );
   };
