@@ -4,6 +4,7 @@
 1. Run Json Server with "json-server --watch twitter.json"
 2. twitter.json can be found in in the folder called server in the project
 3. Run the project by running "yarn start" in the project folder
+NOTE: Please run on windows
 
 
 ## What's in it
